@@ -1,0 +1,5 @@
+<!-- res/drawable/track_pensioner.xml -->
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Define the appearance of the track for Pensioner state -->
+    <solid android:color="#FFC107" /> <!-- Replace with your desired color -->
+</shape>

@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PpoNumber"
+    android:background="@drawable/ppo_bg">
+
+    <ImageView
+        android:layout_width="97dp"
+        android:layout_height="97dp"
+        android:layout_marginTop="16dp"
+        android:src="@drawable/logo_abhi"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        app:cardCornerRadius="30dp"
+        app:cardElevation="11dp"
+        android:backgroundTint="@color/white"
+        android:background="@drawable/custom_edittext">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_gravity="center"
+            android:padding="20dp">
+
+        <TextView
+            android:id="@+id/ppo_command"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/pt_sans_bold"
+            android:text="@string/enter_ppo_number"
+            android:textAlignment="viewStart"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="center"
+            android:gravity="center_horizontal">
+
+            <EditText
+                android:id="@+id/one"
+                android:inputType="number"
+                android:layout_width="@android:dimen/notification_large_icon_height"
+                android:fontFamily="@font/pontano_sans"
+                android:layout_height="match_parent"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="8dp"
+                android:background="@drawable/custom_edittext"
+                android:drawablePadding="6dp"
+                android:maxLength="1"
+                android:padding="12dp"
+                android:hint="@string/x"
+                android:textAlignment="center"
+                android:singleLine="true"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                android:textColorHint="@color/hint_color"/>
+
+            <EditText
+                android:id="@+id/two"
+                android:inputType="number"
+                android:layout_width="@android:dimen/notification_large_icon_height"
+                android:layout_height="match_parent"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="8dp"
+                android:fontFamily="@font/pontano_sans"
+                android:background="@drawable/custom_edittext"
+                android:drawablePadding="6dp"
+                android:maxLength="1"
+                android:padding="12dp"
+                android:singleLine="true"
+                android:textColor="@color/black"
+                android:hint="@string/x"
+                android:textAlignment="center"
+                android:textSize="18sp"
+                android:textColorHint="@color/hint_color"/>
+
+            <EditText
+                android:id="@+id/three"
+                android:inputType="number"
+                android:layout_width="@android:dimen/notification_large_icon_height"
+                android:layout_height="match_parent"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="8dp"
+                android:fontFamily="@font/pontano_sans"
+                android:background="@drawable/custom_edittext"
+                android:drawablePadding="6dp"
+                android:maxLength="1"
+                android:padding="12dp"
+                android:singleLine="true"
+                android:hint="@string/x"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                android:textColorHint="@color/hint_color"/>
+
+            <EditText
+                android:id="@+id/four"
+                android:inputType="number"
+                android:layout_width="@android:dimen/notification_large_icon_height"
+                android:layout_height="match_parent"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="6dp"
+                android:fontFamily="@font/pontano_sans"
+                android:background="@drawable/custom_edittext"
+                android:drawablePadding="8dp"
+                android:maxLength="1"
+                android:padding="12dp"
+                android:singleLine="true"
+                android:hint="@string/x"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                android:textColorHint="@color/hint_color"/>
+
+        </LinearLayout>
+            <Button
+                android:id="@+id/check"
+                android:layout_width="220dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="30dp"
+                android:layout_gravity="center"
+                android:fontFamily="@font/pt_sans_bold"
+                android:backgroundTint="@color/button_blue"
+                android:text="@string/check"
+                android:textSize="16sp"
+                android:textColor="@color/white"
+                app:cornerRadius="12dp" />
+
+            <ProgressBar
+                android:id="@+id/check_loading"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_gravity="center"
+                android:indeterminate="true"
+                android:indeterminateTint="@color/black"
+                android:visibility="gone" />
+
+            <Button
+                android:id="@+id/show_all"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="10dp"
+                android:layout_gravity="center"
+                android:fontFamily="@font/pt_sans_bold"
+                android:backgroundTint="@color/button_blue"
+                android:text="@string/show_all"
+                android:textSize="16sp"
+                android:textColor="@color/white"
+                app:cornerRadius="12dp" />
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

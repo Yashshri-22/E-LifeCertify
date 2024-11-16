@@ -1,0 +1,130 @@
+<resources>
+    <string name="app_name">eLife Certify</string>
+    <string name="login_to_your_account">Login</string>
+    <string name="login_id">Mobile No</string>
+    <string name="otp">OTP</string>
+    <string name="generate_otp">Generate OTP</string>
+    <string name="admin_id">Admin Id</string>
+    <string name="password">Password</string>
+    <string name="validate_otp">Validate OTP</string>
+    <string name="check">Check</string>
+    <string name="show_all">Show all</string>
+    <string name="x">X</string>
+    <string name="enter_ppo_number">Enter PPO Number</string>
+    <string name="search">Search</string>
+    <string name="continueButton">Continue</string>
+    <string name="back">Back</string>
+    <string name="registration_form_step1">Registration Step 1/4</string>
+    <string name="registration_form_step2">Registration Step 2/4</string>
+    <string name="registration_form_step3">Registration Step 3/4</string>
+    <string name="registration_form_step4">Registration Step 4/4</string>
+    <string name="full_name">Full Name</string>
+    <string name="aadharNo">Aadhar No</string>
+    <string name="gender">Gender</string>
+    <string name="designation">Designation</string>
+    <string name="date_of_birth">DOB</string>
+    <string name="date_of_joining">Date of Joining</string>
+    <string name="date_of_retirement">Date of Retirement</string>
+    <string name="type_of_retirement">Type of Retirement</string>
+    <string name="nominee_type">Nominee Type</string>
+    <string name="height">Height</string>
+    <string name="birth_mark">Birth Mark</string>
+    <string name="bank_name">Bank Name</string>
+    <string name="bank_accNo">Bank Account Number</string>
+    <string name="nominee_name">Nominee Name</string>
+    <string name="address">Address</string>
+    <string name="confirmation">Confirmation</string>
+    <string name="are_you_sure_you_want_to_submit_the_data">Are you sure you want to submit the data?</string>
+    <string name="submit">Submit</string>
+    <string name="cancel">Cancel</string>
+    <string name="capture">Capture</string>
+    <string name="ppo_number">PPO Number</string>
+    <string name="start_scanner">Start Scanner</string>
+    <string name="scan">Scan</string>
+    <string name="profile_photo">Profile Photo</string>
+    <string name="upload">Upload</string>
+    <string name="aadhar_back">Aadhar Back</string>
+    <string name="aadhar_front">Aadhar Front</string>
+    <string name="personal_details">Personal Details</string>
+    <string name="generate_certificate">Generate Certificate</string>
+    <string name="faceRecognition">Face Recognition</string>
+    <string name="fingerPrint">Finger Print Scan</string>
+    <string name="declaration">Declaration</string>
+    <string name="question_1">After Retirement have you worked or been working in any Government or Private Institute?</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+    <string name="next">Next</string>
+    <string name="institute_name_and_address">Institute Name and Address</string>
+    <string name="new_joining_date">New Joining Date</string>
+    <string name="current_salary">Current Salary</string>
+    <string name="are_you_remarried">Are you Remarried?</string>
+    <string name="place">Place</string>
+    <string name="date">Date</string>
+    <string name="view_certificate">View Certificate</string>
+    <string name="ppo_number_text">PPO Number:-</string>
+    <string name="done">Done</string>
+    <string name="uploaded">Uploaded</string>
+    <string name="camera">Camera</string>
+    <string-array name="gender">
+        <item>Female</item>
+        <item>Male</item>
+        <item>Other</item>
+    </string-array>
+    <string-array name="arrayFingerCount">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+        <item>9</item>
+        <item>10</item>
+    </string-array>
+
+    <string-array name="arrayFingerType">
+        <item>FMR</item>
+        <item>FIR</item>
+        <item>BOTH</item>
+    </string-array>
+
+    <string-array name="arrayIrisCount">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+    </string-array>
+
+    <string-array name="arrayIrisType">
+        <item>IIR</item>
+    </string-array>
+
+    <string-array name="arrayFaceCount">
+        <item>0</item>
+        <item>1</item>
+    </string-array>
+
+    <string-array name="arrayFaceType">
+        <item>FID</item>
+    </string-array>
+
+    <string-array name="arrayFingerFormat">
+        <item>XML</item>
+        <item>PROTOBUF</item>
+    </string-array>
+
+    <string-array name="arrayEnv">
+        <item>S</item>
+        <item>PP</item>
+        <item>P</item>
+    </string-array>
+    <string name="title_activity_main">MainActivity</string>
+    <string name="DeviceInfo">Device Info</string>
+
+    <string-array name="arrayPGCount">
+        <item>1</item>
+        <item>2</item>
+    </string-array>
+
+</resources>

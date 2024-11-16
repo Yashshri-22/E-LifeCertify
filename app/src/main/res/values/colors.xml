@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="hint_color">#878282</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="background">#EEEEEE</color>
+    <color name="toggle_color">#3EB9CA</color>
+    <color name="button_black">#1D2626</color>
+    <color name="button_blue">#32A5B4</color>
+    <color name="search_inside">#F4F0F0</color>
+    <color name="border">#000000</color>
+    <color name="ppo_fields">#F8F8F8</color>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+
+    <color name="colorBg">#80B0C4DE</color>
+    <color name="colorLabel">#000000</color>
+</resources>

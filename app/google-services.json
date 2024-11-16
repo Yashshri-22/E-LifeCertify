@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "870714621434",
+    "project_id": "elifecertify-otp",
+    "storage_bucket": "elifecertify-otp.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:870714621434:android:4ced8e1dfed00aa8137843",
+        "android_client_info": {
+          "package_name": "com.example.project"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDty8gyTxIom4TQeyqBRWi6IjF6YOZCqAY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

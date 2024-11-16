@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:background="@color/button_blue">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/pt_sans_bold"
+            android:layout_centerInParent="true"
+            android:text="@string/declaration"
+            android:textColor="@color/white"
+            android:textSize="26sp"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@color/white"
+        android:padding="15dp">
+
+        <TextView
+            android:id="@+id/question"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:fontFamily="@font/pontano_sans"
+            android:textColor="@color/hint_color"
+            android:text="@string/question_1"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/yes"
+                android:layout_width="150dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:backgroundTint="@color/button_black"
+                android:fontFamily="@font/pt_sans_bold"
+                android:gravity="center"
+                android:text="@string/yes"
+                android:textColor="@color/white"
+                android:textSize="16sp"
+                app:cornerRadius="20dp" />
+
+            <Button
+                android:id="@+id/no"
+                android:layout_width="150dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:backgroundTint="@android:color/transparent"
+                android:fontFamily="@font/pt_sans_bold"
+                android:text="@string/no"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                app:cornerRadius="20dp"
+                app:strokeColor="@color/black"
+                app:strokeWidth="1dp" />
+
+        </LinearLayout>
+
+
+        <EditText
+            android:id="@+id/institute_name"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:fontFamily="@font/pontano_sans"
+            android:textColor="@color/black"
+            android:layout_marginTop="12dp"
+            android:inputType="text"
+            android:textColorHint="@color/hint_color"
+            android:hint="@string/institute_name_and_address"
+            android:maxLength="100"
+            android:visibility="gone"/>
+
+
+        <EditText
+            android:id="@+id/new_joining_date"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:fontFamily="@font/pontano_sans"
+            android:layout_marginTop="16dp"
+            android:textColorHint="@color/hint_color"
+            android:textColor="@color/black"
+            android:hint="@string/new_joining_date"
+            android:enabled="true"
+            android:drawableEnd="@drawable/joining_date_icon"
+            android:visibility="gone"/>
+
+        <EditText
+            android:id="@+id/current_salary"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_marginTop="16dp"
+            android:fontFamily="@font/pontano_sans"
+            android:textColorHint="@color/hint_color"
+            android:textColor="@color/black"
+            android:hint="@string/current_salary"
+            android:inputType="date"
+            android:visibility="gone"/>
+
+        <Button
+            android:id="@+id/next"
+            android:layout_width="150dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:fontFamily="@font/pt_sans_bold"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginStart="85dp"
+            android:backgroundTint="@color/button_blue"
+            android:text="@string/next"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            app:cornerRadius="20dp"
+            android:visibility="gone"/>
+
+    </LinearLayout>
+</LinearLayout>

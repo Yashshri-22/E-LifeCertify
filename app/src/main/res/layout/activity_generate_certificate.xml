@@ -1,0 +1,456 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/check_bg"
+    tools:context=".CheckScreen">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/profile_generate_certificate_screen"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/profile"
+            android:padding="15dp"
+            android:background="@drawable/custom_profile_bg"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="500dp"
+            android:layout_marginLeft="14dp"
+            android:layout_marginTop="18dp"
+            android:layout_marginRight="14dp"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/custom_edittext"
+            android:backgroundTint="@color/white"
+            android:padding="12dp"
+            app:cardCornerRadius="30dp"
+            app:cardElevation="8dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="12dp">
+
+                <TextView
+                    android:id="@+id/personal_details"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="12dp"
+                    android:text="@string/personal_details"
+                    android:fontFamily="@font/pt_sans_bold"
+                    android:textAlignment="center"
+                    android:textColor="@color/black"
+                    android:textSize="24sp"
+                    android:textStyle="bold" />
+
+                <ScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="top">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <EditText
+                            android:id="@+id/pensioner_full_name"
+                            android:layout_width="match_parent"
+                            android:layout_height="55dp"
+                            android:fontFamily="@font/pontano_sans"
+                            android:layout_marginHorizontal="12dp"
+                            android:layout_marginVertical="8dp"
+                            android:background="@drawable/custom_edittext"
+                            android:drawableStart="@drawable/adminid_icon"
+                            android:drawablePadding="8dp"
+                            android:hint="@string/full_name"
+                            android:inputType="text"
+                            android:maxLength="50"
+                            android:padding="12dp"
+                            android:singleLine="true"
+                            android:textColor="@color/black"
+                            android:textColorHighlight="@color/cardview_dark_background"
+                            android:textColorHint="@color/hint_color"
+                            android:textSize="16sp" />
+
+                        <EditText
+                            android:id="@+id/pensioner_mobileNo"
+                            android:layout_width="match_parent"
+                            android:layout_height="55dp"
+                            android:layout_marginHorizontal="12dp"
+                            android:fontFamily="@font/pontano_sans"
+                            android:layout_marginVertical="8dp"
+                            android:background="@drawable/custom_edittext"
+                            android:drawableStart="@drawable/mobile"
+                            android:drawablePadding="8dp"
+                            android:hint="@string/login_id"
+                            android:inputType="number"
+                            android:maxLength="10"
+                            android:padding="12dp"
+                            android:singleLine="true"
+                            android:textColor="@color/black"
+                            android:textColorHighlight="@color/cardview_dark_background"
+                            android:textColorHint="@color/hint_color"
+                            android:textSize="16sp" />
+
+                        <EditText
+                            android:id="@+id/pensioner_aadharNo"
+                            android:layout_width="match_parent"
+                            android:layout_height="55dp"
+                            android:fontFamily="@font/pontano_sans"
+                            android:layout_marginHorizontal="12dp"
+                            android:layout_marginVertical="8dp"
+                            android:background="@drawable/custom_edittext"
+                            android:drawableStart="@drawable/aadhar_icon"
+                            android:drawablePadding="8dp"
+                            android:hint="@string/aadharNo"
+                            android:inputType="number"
+                            android:maxLength="12"
+                            android:padding="12dp"
+                            android:singleLine="true"
+                            android:textColor="@color/black"
+                            android:textColorHighlight="@color/cardview_dark_background"
+                            android:textColorHint="@color/hint_color"
+                            android:textSize="16sp" />
+
+                        <EditText
+                            android:id="@+id/pensioner_gender"
+                            android:layout_width="match_parent"
+                            android:layout_height="55dp"
+                            android:fontFamily="@font/pontano_sans"
+                            android:layout_marginHorizontal="12dp"
+                            android:layout_marginVertical="8dp"
+                            android:background="@drawable/custom_edittext"
+                            android:drawableStart="@drawable/gender_icon"
+                            android:drawablePadding="8dp"
+                            android:hint="@string/gender"
+                            android:inputType="text"
+                            android:maxLength="50"
+                            android:padding="12dp"
+                            android:singleLine="true"
+                            android:textColor="@color/black"
+                            android:textColorHighlight="@color/cardview_dark_background"
+                            android:textColorHint="@color/hint_color"
+                            android:textSize="16sp" />
+
+
+
+                        <EditText
+                            android:id="@+id/pensioner_designation"
+                            android:layout_width="match_parent"
+                            android:layout_height="55dp"
+                            android:fontFamily="@font/pontano_sans"
+                            android:layout_marginHorizontal="12dp"
+                            android:layout_marginVertical="8dp"
+                            android:background="@drawable/custom_edittext"
+                            android:drawableStart="@drawable/designation"
+                            android:drawablePadding="8dp"
+                            android:hint="@string/designation"
+                            android:inputType="text"
+                            android:maxLength="50"
+                            android:padding="12dp"
+                            android:singleLine="true"
+                            android:textColor="@color/black"
+                            android:textColorHighlight="@color/cardview_dark_background"
+                            android:textColorHint="@color/hint_color"
+                            android:textSize="16sp" />
+
+                        <EditText
+                            android:id="@+id/pensioner_date_of_birth"
+                            android:layout_width="match_parent"
+                            android:layout_height="55dp"
+                            android:fontFamily="@font/pontano_sans"
+                            android:layout_marginHorizontal="12dp"
+                            android:layout_marginVertical="8dp"
+                            android:background="@drawable/custom_edittext"
+                            android:drawableStart="@drawable/dob_icon"
+                            android:drawableEnd="@drawable/calendar"
+                            android:drawablePadding="8dp"
+                            android:hint="@string/date_of_birth"
+                            android:inputType="none"
+                            android:clickable="true"
+                            android:focusable="false"
+                            android:cursorVisible="false"
+                            android:padding="12dp"
+                            android:singleLine="true"
+                            android:textColor="@color/black"
+                            android:textColorHighlight="@color/cardview_dark_background"
+                            android:textColorHint="@color/hint_color"
+                            android:textSize="16sp" />
+
+                        <EditText
+                            android:id="@+id/pensioner_date_of_joining"
+                            android:layout_width="match_parent"
+                            android:layout_height="55dp"
+                            android:fontFamily="@font/pontano_sans"
+                            android:layout_marginHorizontal="12dp"
+                            android:layout_marginVertical="8dp"
+                            android:background="@drawable/custom_edittext"
+                            android:drawableStart="@drawable/joining_date_icon"
+                            android:drawablePadding="8dp"
+                            android:hint="@string/date_of_joining"
+                            android:inputType="none"
+                            android:clickable="true"
+                            android:focusable="false"
+                            android:cursorVisible="false"
+                            android:padding="12dp"
+                            android:singleLine="true"
+                            android:textColor="@color/black"
+                            android:textColorHighlight="@color/cardview_dark_background"
+                            android:textColorHint="@color/hint_color"
+                            android:textSize="16sp" />
+
+                        <EditText
+                            android:id="@+id/pensioner_date_of_retirement"
+                            android:layout_width="match_parent"
+                            android:layout_height="55dp"
+                            android:fontFamily="@font/pontano_sans"
+                            android:layout_marginHorizontal="12dp"
+                            android:layout_marginVertical="8dp"
+                            android:background="@drawable/custom_edittext"
+                            android:drawableStart="@drawable/retirement_date_icon"
+                            android:drawablePadding="8dp"
+                            android:hint="@string/date_of_retirement"
+                            android:inputType="none"
+                            android:clickable="true"
+                            android:focusable="false"
+                            android:cursorVisible="false"
+                            android:padding="12dp"
+                            android:singleLine="true"
+                            android:textColor="@color/black"
+                            android:textColorHighlight="@color/cardview_dark_background"
+                            android:textColorHint="@color/hint_color"
+                            android:textSize="16sp" />
+
+                        <EditText
+                            android:id="@+id/pensioner_type_of_retirement"
+                            android:layout_width="match_parent"
+                            android:layout_height="55dp"
+                            android:fontFamily="@font/pontano_sans"
+                            android:layout_marginHorizontal="12dp"
+                            android:layout_marginVertical="8dp"
+                            android:background="@drawable/custom_edittext"
+                            android:drawableStart="@drawable/retirement_type_icon"
+                            android:drawablePadding="8dp"
+                            android:hint="@string/type_of_retirement"
+                            android:inputType="number"
+                            android:maxLength="1"
+                            android:padding="12dp"
+                            android:singleLine="true"
+                            android:textColor="@color/black"
+                            android:textColorHighlight="@color/cardview_dark_background"
+                            android:textColorHint="@color/hint_color"
+                            android:textSize="16sp" />
+
+                        <EditText
+                            android:id="@+id/pensioner_nominee_type"
+                            android:layout_width="match_parent"
+                            android:layout_height="55dp"
+                            android:fontFamily="@font/pontano_sans"
+                            android:layout_marginHorizontal="12dp"
+                            android:layout_marginVertical="8dp"
+                            android:background="@drawable/custom_edittext"
+                            android:drawableStart="@drawable/nominee_type_icon"
+                            android:drawablePadding="8dp"
+                            android:hint="@string/nominee_type"
+                            android:inputType="number"
+                            android:maxLength="1"
+                            android:padding="12dp"
+                            android:singleLine="true"
+                            android:textColor="@color/black"
+                            android:textColorHighlight="@color/cardview_dark_background"
+                            android:textColorHint="@color/hint_color"
+                            android:textSize="16sp" />
+
+                        <EditText
+                            android:id="@+id/pensioner_nominee_name"
+                            android:layout_width="match_parent"
+                            android:layout_height="55dp"
+                            android:fontFamily="@font/pontano_sans"
+                            android:layout_marginHorizontal="12dp"
+                            android:layout_marginVertical="8dp"
+                            android:background="@drawable/custom_edittext"
+                            android:drawableStart="@drawable/nominee_name_icon"
+                            android:drawablePadding="8dp"
+                            android:hint="@string/nominee_name"
+                            android:inputType="text"
+                            android:maxLength="50"
+                            android:padding="12dp"
+                            android:singleLine="true"
+                            android:textColor="@color/black"
+                            android:textColorHighlight="@color/cardview_dark_background"
+                            android:textColorHint="@color/hint_color"
+                            android:textSize="16sp" />
+
+                        <EditText
+                            android:id="@+id/pensioner_height"
+                            android:layout_width="match_parent"
+                            android:layout_height="55dp"
+                            android:fontFamily="@font/pontano_sans"
+                            android:layout_marginHorizontal="12dp"
+                            android:layout_marginVertical="8dp"
+                            android:background="@drawable/custom_edittext"
+                            android:drawableStart="@drawable/height"
+                            android:drawablePadding="8dp"
+                            android:hint="@string/height"
+                            android:inputType="numberDecimal"
+                            android:maxLength="5"
+                            android:padding="12dp"
+                            android:singleLine="true"
+                            android:textColor="@color/black"
+                            android:textColorHighlight="@color/cardview_dark_background"
+                            android:textColorHint="@color/hint_color"
+                            android:textSize="16sp" />
+
+                        <EditText
+                            android:id="@+id/pensioner_birth_mark"
+                            android:layout_width="match_parent"
+                            android:layout_height="55dp"
+                            android:fontFamily="@font/pontano_sans"
+                            android:layout_marginHorizontal="12dp"
+                            android:layout_marginVertical="8dp"
+                            android:background="@drawable/custom_edittext"
+                            android:drawableStart="@drawable/birth_mark"
+                            android:drawablePadding="8dp"
+                            android:hint="@string/birth_mark"
+                            android:inputType="text"
+                            android:padding="12dp"
+                            android:maxLength="50"
+                            android:singleLine="true"
+                            android:textColor="@color/black"
+                            android:textColorHighlight="@color/cardview_dark_background"
+                            android:textColorHint="@color/hint_color"
+                            android:textSize="16sp" />
+
+                        <EditText
+                            android:id="@+id/pensioner_bank_name"
+                            android:layout_width="match_parent"
+                            android:layout_height="55dp"
+                            android:fontFamily="@font/pontano_sans"
+                            android:layout_marginHorizontal="12dp"
+                            android:layout_marginVertical="8dp"
+                            android:background="@drawable/custom_edittext"
+                            android:drawableStart="@drawable/bank"
+                            android:drawablePadding="8dp"
+                            android:hint="@string/bank_name"
+                            android:inputType="text"
+                            android:maxLength="50"
+                            android:padding="12dp"
+                            android:singleLine="true"
+                            android:textColor="@color/black"
+                            android:textColorHighlight="@color/cardview_dark_background"
+                            android:textColorHint="@color/hint_color"
+                            android:textSize="16sp" />
+
+                        <EditText
+                            android:id="@+id/pensioner_bank_accNo"
+                            android:layout_width="match_parent"
+                            android:layout_height="55dp"
+                            android:fontFamily="@font/pontano_sans"
+                            android:layout_marginHorizontal="12dp"
+                            android:layout_marginVertical="8dp"
+                            android:background="@drawable/custom_edittext"
+                            android:drawableStart="@drawable/bank_account_number"
+                            android:drawablePadding="8dp"
+                            android:hint="@string/bank_accNo"
+                            android:inputType="number"
+                            android:maxLength="16"
+                            android:padding="12dp"
+                            android:singleLine="true"
+                            android:textColor="@color/black"
+                            android:textColorHighlight="@color/cardview_dark_background"
+                            android:textColorHint="@color/hint_color"
+                            android:textSize="16sp" />
+
+                        <EditText
+                            android:id="@+id/pensioner_address"
+                            android:layout_width="match_parent"
+                            android:layout_height="55dp"
+                            android:fontFamily="@font/pontano_sans"
+                            android:layout_marginHorizontal="12dp"
+                            android:layout_marginVertical="8dp"
+                            android:background="@drawable/custom_edittext"
+                            android:drawableStart="@drawable/address"
+                            android:drawablePadding="8dp"
+                            android:hint="@string/address"
+                            android:inputType="text"
+                            android:maxLength="50"
+                            android:padding="12dp"
+                            android:singleLine="true"
+                            android:textColor="@color/black"
+                            android:textColorHighlight="@color/cardview_dark_background"
+                            android:textColorHint="@color/hint_color"
+                            android:textSize="16sp" />
+
+
+                    </LinearLayout>
+                </ScrollView>
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <Button
+            android:id="@+id/generateCertificate"
+            android:layout_width="220dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:fontFamily="@font/pt_sans_bold"
+            android:layout_marginTop="8dp"
+            android:backgroundTint="@color/button_black"
+            android:text="@string/generate_certificate"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            app:cornerRadius="20dp" />
+
+        <ProgressBar
+            android:id="@+id/viewCertificate_loading"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_gravity="center"
+            android:indeterminate="true"
+            android:indeterminateTint="@color/black"
+            android:visibility="gone" />
+
+        <Button
+            android:id="@+id/viewCertificate"
+            android:layout_width="220dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="8dp"
+            android:fontFamily="@font/pt_sans_bold"
+            android:backgroundTint="@color/button_black"
+            android:text="@string/view_certificate"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            app:cornerRadius="20dp"
+            android:visibility="gone"/>
+
+    </LinearLayout>
+
+    <WebView
+        android:id="@+id/webView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
